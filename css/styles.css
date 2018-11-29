@@ -1,0 +1,90 @@
+
+header{
+background-image:url("../images/baggrund.jpg");
+    background-size: cover;  
+    padding: 50px;
+}
+
+h1 {
+color: white;
+}
+
+.forslag {
+  background-color: white;
+}
+
+img{
+    width:50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+
+
+.flex-item {
+    margin: auto;
+    width: 100%;
+}
+
+header {
+    
+}
+
+.flex-container>* {
+    width: 25%;
+    
+}
+/*Gallery styling*/
+.gallery {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 300px;
+    grid-auto-flow: dense;
+}
+
+.gallery > img {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+    height: 100%;
+    object-fit: scale;
+}
+
+/*Layout sizes for images*/
+.normal {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.horizontal {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.vertical {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.verticalbig {
+    grid-column: span 2;
+    grid-row: span 4;
+}
+
+/*end of gallery styling*/
