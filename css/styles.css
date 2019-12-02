@@ -1,90 +1,42 @@
-
-header{
-background-image:url("../images/baggrund.jpg");
-    background-size: cover;  
-    padding: 50px;
-}
-
-h1 {
-color: white;
-}
-
-.forslag {
-  background-color: white;
-}
-
-img{
-    width:50%;
-    display: block;
+body {
+    font-family: sans-serif;
     margin: 0 auto;
 }
 
-.flex-container {
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-justify-content: center;
-    justify-content: center;
-    background-color: white;
-    align-items: center;
-}
-
-
-.flex-item {
-    margin: auto;
-    width: 100%;
-}
-
 header {
-    
+    background-image: url("../images/baggrund.jpg");
+    background-size: cover;
+    padding: 80px 10px;
 }
 
-.flex-container>* {
-    width: 25%;
-    
-}
-/*Gallery styling*/
-.gallery {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-auto-rows: 300px;
-    grid-auto-flow: dense;
+.wrapper {
+    width: 90%;
+    margin: auto;
 }
 
-.gallery > img {
+h1 {
+    color: white;
+    width: 80%;
+    margin-left: 0;
+}
+
+#flex {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    font-size: 2em;
-    color: #ffeead;
-    height: 100%;
-    object-fit: scale;
+
 }
 
-/*Layout sizes for images*/
-.normal {
-    grid-column: span 1;
-    grid-row: span 1;
+#flex p {
+    font-size: 2.5em;
+    font-family: 'Mountains of Christmas', cursive;
 }
 
-.horizontal {
-    grid-column: span 2;
-    grid-row: span 1;
+#frontimg {
+    width: 50%;
 }
 
-.vertical {
-    grid-row: span 2;
-    grid-column: span 1;
+img {
+    width: 100%;
+    padding: 5px;
 }
-
-.big {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.verticalbig {
-    grid-column: span 2;
-    grid-row: span 4;
-}
-
-/*end of gallery styling*/
